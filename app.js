@@ -18,7 +18,9 @@ const educationRoute = require('./route/Education.Route');
 const UserRoute = require('./route/User.Route');
 const connectDatabase = require("./utils/database");
 
-
+app.get("/",(req,res)=>{
+  res.send("ok")
+})
 app.use("/api", educationRoute);
 app.use("/api", UserRoute);
 
